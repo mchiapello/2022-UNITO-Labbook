@@ -39,3 +39,12 @@ dt %>%
 ```
 
 La piu bella e \@ref(tab:table2).
+
+
+```{r test}
+source("protocols/_main.R")
+
+pcr %>%
+	kbl(caption = "Recreating booktabs style table") %>%
+	kable_minimal()
+```
