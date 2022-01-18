@@ -11,3 +11,31 @@ link-citations: yes
 github-repo: mchiapello/2022-UNITO-Labbook
 ---
 
+# Preface
+
+## Prova 1
+```{r table1}
+library(kableExtra)
+dt <- mtcars[1:5, 1:6]
+
+dt %>%
+      kbl(caption = "Recreating booktabs style table") %>%
+        kable_styling()
+```
+
+## PRova2
+
+```{r table2}
+dt %>%
+  kbl(caption = "Recreating booktabs style table") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+## PRova3
+```{r table3}
+dt %>%
+  kbl(caption = "Recreating booktabs style table") %>%
+  kable_minimal()
+```
+
+La piu bella e \@ref(tab:table2).

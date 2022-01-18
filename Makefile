@@ -10,3 +10,6 @@ pdf:
 
 bs4:
 	Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::bs4_book')"
+
+serve:
+	Rscript -e "bookdown::serve_book()"
