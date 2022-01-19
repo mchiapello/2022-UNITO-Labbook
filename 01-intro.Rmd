@@ -1,21 +1,37 @@
-# Introduction {#intro}
+# Heavy metals {#hm}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+Qui il pdf del progetto: [**Mechanisms of gene regulation during the ericoid endomycorrhizal interaction**](Documents/CHIAPELLO_proposal.pdf)
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+## 20211217 {#D20211217}
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+### Preparazione degli inoculi liquidi. 
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+Sono state preparate 30 beute: 
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+- 15 per _O. maius_ A:
+  - 5 Controlli 
+  - 5 trattati con 0.0.05mM Cd
+  - 5 trattati con 0.05mM Cd
+
+- 15 per _O. maius_ Zn:
+  - 5 Controlli 
+  - 5 trattati con 0.0.05mM Cd
+  - 5 trattati con 0.05mM Cd
+
+Terreno di controllo: [Czapec-Glucosio](Documents/media1.pdf) a cui è stato aggiunto CdSO~4~ alla concentrazione necessaria. Il CdSO~4~ è stato sterilizzato per filtrazione (filtri da 0.2)
+
+Sono state utilizzate beute da 250 ml nelle quali aggiungere 100 ml di terreno di coltura
+
+
+## 20220117 {#D20220117}
+
+Inoculi controllati (dell'esperimento \@ref(D20211217))dopo un mese di crescita. I controlli sono tutti normali, mentre il ceppo suscettibile (_O. maius_ A) non è cresciuto su nessuna concentrazione di Cd, mentre il ceppo resistente (_O. maius_ Zn) non è cresciuto sulla concentrazione più elevata di Cd e sulla meno elevata è cresciuto molto poco.
+
+**Le concentrazioni devono essere riviste**. Probabilmente questo terreno non va bene con concentrazioni così alte. Tutte le prove a 0.025 e 0.05 erano state fatte su Czapek-pectina, un terreno più ricco, che probabilmente aiutava meglio il fungo a rispondere ai metalli.
+
+Procederemo comunque alla filtrazione dei miceli che potremo poi usare come prove per le estrazioni di RNA.
+
+Di tutte le beute una sola era contaminata!
+
+Molte delle piastre lasciate in camera di crescita erano invece contaminate da acari (lasciano dei percorsi sulle piastre). Erano contaminate anche delle piastre chiuse. 
