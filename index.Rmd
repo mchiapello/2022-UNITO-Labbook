@@ -17,5 +17,13 @@ Quaderno di laboratorio di Marco Chiapello.
 
 Assegno di ricerca di un anno al Dipartimento di Scienze della Vita e Biologia dei Sistemi, Università degli Studi di Torino, dal 1 dicembre 2021 al 30 novembre 2022.
 
-![](images/Unito-logo.png)
+<img src="images/Unito-logo.png" width="150" class="centerMC">
+
+<style>
+	.centerMC {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+</style>
 
