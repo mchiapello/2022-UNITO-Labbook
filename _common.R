@@ -12,3 +12,4 @@ knitr::opts_chunk$set(
   fig.width = 5,
   fig.height = 7
 )
+
