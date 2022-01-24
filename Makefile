@@ -1,3 +1,5 @@
+bookpdf: gitbook pdf
+
 clear:
 	rm -rf _book
 	rm -rf _bookdown_files/
