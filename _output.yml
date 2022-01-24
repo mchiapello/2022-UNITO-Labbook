@@ -6,7 +6,6 @@ bookdown::gitbook:
       collapse: section
       before: |
         <li><a href="./">Lab book</a></li>
-    download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

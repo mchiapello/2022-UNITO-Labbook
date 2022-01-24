@@ -41,3 +41,54 @@ Molte delle piastre lasciate in camera di crescita erano invece contaminate da a
 Pulizia laboratorio.
 
 Contattare Chiara per la prossima settimana.
+
+## 20220124 {#D20220124}
+
+### Preparazione dei materiali e organizzazione per domani
+
+Domani (\@ref(D20220125)) Chiara e Miriana verranno per iniziare a preparare i materiali per filtrare le beute di _O. maius_ A e Zn cresciute su Cd nell'ultimo mese e preparare le piastre di Czapek-dox
+
+
+## 20220125 {#D20220125}
+
+### Sterilizzare tutti i materiali necessari per filtrare le beute
+  - buckner    
+  - filtri di carta    
+  - pinzette    
+  - provette da 1,5 o 2 ml    
+  - 1L di H~2~O    
+
+### Preparare delle nuove piastre utilizzando il Czapeck-dox     
+
+### Verificare che il sistema a muro per fare il vuoto per filtrare funzioni senza problemi
+
+## 20220126 {#D20220126}
+
+### Filtrare le colture
+
+- Fare foto delle beute
+
+- Peso dei miceli filtrati
+
+```{r tabella-pesi-20220126}
+library(tidyverse)
+library(kableExtra)
+
+tb <- tibble(Sample = NA,
+       Cd = NA,
+       Weight_g = NA)
+
+tb %>%
+  kbl(caption = str_glue("Weight in gram of _O. maius_ Cd and A grown on different concentrations of Cd")) %>%
+  kable_paper() %>%
+  kable_styling(bootstrap_options = c("striped", "condensed"),
+                full_width = TRUE, html_font = "Cambria",
+                fixed_thead = TRUE, position = "center")
+
+```
+
+### Lavare le beute
+
+## 20220127 {#D20220127}
+
+## 20220128 {#D20220128}
