@@ -60,7 +60,12 @@ Domani (\@ref(D20220125)) Chiara e Miriana verranno per iniziare a preparare i m
 
 ### Preparare delle nuove piastre utilizzando il Czapeck-dox     
 
+Prepatato 1.5L di terreno. Dopo averlo sterilizzato siamo riusciti a colare 65 piastre.
+
 ### Verificare che il sistema a muro per fare il vuoto per filtrare funzioni senza problemi
+
+Ok! Non molto potente ma funziona.
+
 
 ## 20220126 {#D20220126}
 
@@ -68,18 +73,16 @@ Domani (\@ref(D20220125)) Chiara e Miriana verranno per iniziare a preparare i m
 
 - Fare foto delle beute
 
-- Peso dei miceli filtrati
+#### Peso dei miceli filtrati
 
 ```{r tabella-pesi-20220126}
-library(tidyverse)
-library(kableExtra)
+googlesheets4::gs4_deauth()
+ss <- "https://docs.google.com/spreadsheets/d/1OkMtFIXftmHUZGFznef569fR_cFzzxgjSIX2TpwCdms/edit?usp=sharing"
 
-tb <- tibble(Sample = NA,
-       Cd = NA,
-       Weight_g = NA)
-
+tb <- googlesheets4::read_sheet(ss)
 tb %>%
-  kbl(caption = str_glue("Weight in gram of _O. maius_ Cd and A grown on different concentrations of Cd")) %>%
+  mutate(note = ifelse(is.na(note), "", note)) %>%
+  kbl(caption = str_glue("Weight in gram of _O. maius_ Zn and A grown on different concentrations of Cd")) %>%
   kable_paper() %>%
   kable_styling(bootstrap_options = c("striped", "condensed"),
                 full_width = TRUE, html_font = "Cambria",
@@ -91,4 +94,45 @@ tb %>%
 
 ## 20220127 {#D20220127}
 
+### Preparazione terreno (Czapek-glucosio)
+
+Deciso con Elena di portare il pH a 5 anzichè a 6. Questo perchè nel precedente esperimento, in cui il pH era 6 i funghi (_O. maius_ Zn e _O. maius_ A) non sono cresciuti bene in presenza di Cd. Da precedenti articoli che usavano Czapek-glucosio il pH era più basso, addirittura 4 nel caso di [@KHOUJA20141].
+
+Il pH è rimasto 5 anche dopo aver autoclavato.
+
+
 ## 20220128 {#D20220128}
+
+### Preparazaione degli inoculi
+
+Deciso di usare 3 concentrazioni di Cd:
+
+1. 20uM    
+1. 10uM    
+1. 5uM
+
+Quindi in 100ml di terreno messi rispettivamente: 200ul, 100ul, 50ul
+
+5 repliche per concentrazione per entrambi i funghi:
+
+1. _O. maius_ Zn (tollerante)
+
+1. _O. maius_ A (suscettibile)
+
+### Pulizia della cella funghi
+
+## 20220131 {#D20220131}
+
+### Preparazione piastre Czapek-dox
+
+Preparare le piastre con il Czapek-dox che ha portato Elena da Nancy.
+
+Preparare 1.5L dividendolo in 2 beute da 1L (750mL per beuta) + 47.5g per L.
+
+Il terreno contiene già 2% di agar.
+
+### Propagazione funghi Elena
+
+Fare 3 piastre per fungo.
+
+Fare con Chiara. Io faccio prima piastra e lei le altre 2. 
