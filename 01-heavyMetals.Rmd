@@ -136,3 +136,27 @@ Il terreno contiene già 2% di agar.
 Fare 3 piastre per fungo.
 
 Fare con Chiara. Io faccio prima piastra e lei le altre 2. 
+
+```{r trapianti-20220131}
+library(tidyverse)
+library(googlesheets4)
+library(janitor)
+gs4_auth(email = "marco.chiapello@unito.it")
+
+# Link
+ss <- "https://docs.google.com/spreadsheets/d/1b-p35Wa7KSQj1FaG5RngW2LvbMJkvOccf9wNPDDHHCI/edit?usp=sharing"
+
+# Read data
+rd <- read_sheet(ss) %>%
+    clean_names()
+
+rd %>%
+  rename(Madre = nome_ceppo, Figlia = piastre_da_trapianti_torino) %>%
+  kbl(caption = str_glue("Tabella trapianti")) %>%
+  kable_paper() %>%
+  kable_styling(bootstrap_options = c("striped", "condensed"),
+                full_width = TRUE, html_font = "Cambria",
+                fixed_thead = TRUE, position = "center")
+
+```
+
