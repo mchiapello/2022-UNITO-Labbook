@@ -160,3 +160,27 @@ rd %>%
 
 ```
 
+
+## 20220201 {#D20220201}
+
+### Preparato piastre antagonismo
+
+#### Organismi usati
+
+1. _Heterobasidion annosum_   
+1. _Hypholoma fasciculare_    
+1. _Stereum hirsutum_   
+1. _Kuehneromyces mutabilis_
+
+#### Controlli
+
+1. 6 piastre per _O. maius_ Zn
+
+1. 3 Piastre per ogni fungo usato per l'interazione 
+
+#### Piastre antagonismo
+
+1. 6 piastre per interazione (24 piastre)
+
+
+
