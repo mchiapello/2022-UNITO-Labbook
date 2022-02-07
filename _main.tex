@@ -1,0 +1,556 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Labbook},
+  pdfauthor={Marco Chiapello},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Labbook}
+\author{Marco Chiapello}
+\date{Last update: 2022-02-04}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{preface}{%
+\chapter{Preface}\label{preface}}
+
+Quaderno di laboratorio di Marco Chiapello.
+
+Assegno di ricerca di un anno al Dipartimento di Scienze della Vita e Biologia dei Sistemi, Università degli Studi di Torino, dal 1 dicembre 2021 al 30 novembre 2022.
+
+\hypertarget{hm}{%
+\chapter{Heavy metals}\label{hm}}
+
+Qui il pdf del progetto: \href{Documents/CHIAPELLO_proposal.pdf}{\textbf{Mechanisms of gene regulation during the ericoid endomycorrhizal interaction}}
+
+\hypertarget{D20211217}{%
+\section{20211217}\label{D20211217}}
+
+\hypertarget{preparazione-degli-inoculi-liquidi.}{%
+\subsection{Preparazione degli inoculi liquidi.}\label{preparazione-degli-inoculi-liquidi.}}
+
+Sono state preparate 30 beute:
+
+\begin{itemize}
+\tightlist
+\item
+  15 per \emph{O. maius} A:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    5 Controlli
+  \item
+    5 trattati con 0.0.05mM Cd
+  \item
+    5 trattati con 0.05mM Cd
+  \end{itemize}
+\item
+  15 per \emph{O. maius} Zn:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    5 Controlli
+  \item
+    5 trattati con 0.0.05mM Cd
+  \item
+    5 trattati con 0.05mM Cd
+  \end{itemize}
+\end{itemize}
+
+Terreno di controllo: \href{Documents/media1.pdf}{Czapec-Glucosio} a cui è stato aggiunto CdSO\textsubscript{4} alla concentrazione necessaria. Il CdSO\textsubscript{4} è stato sterilizzato per filtrazione (filtri da 0.2)
+
+Sono state utilizzate beute da 250 ml nelle quali aggiungere 100 ml di terreno di coltura
+
+\hypertarget{D20220117}{%
+\section{20220117}\label{D20220117}}
+
+Inoculi controllati (dell'esperimento \ref{D20211217})dopo un mese di crescita. I controlli sono tutti normali, mentre il ceppo suscettibile (\emph{O. maius} A) non è cresciuto su nessuna concentrazione di Cd, mentre il ceppo resistente (\emph{O. maius} Zn) non è cresciuto sulla concentrazione più elevata di Cd e sulla meno elevata è cresciuto molto poco.
+
+\textbf{Le concentrazioni devono essere riviste}. Probabilmente questo terreno non va bene con concentrazioni così alte. Tutte le prove a 0.025 e 0.05 erano state fatte su Czapek-pectina, un terreno più ricco, che probabilmente aiutava meglio il fungo a rispondere ai metalli.
+
+Procederemo comunque alla filtrazione dei miceli che potremo poi usare come prove per le estrazioni di RNA.
+
+Di tutte le beute una sola era contaminata!
+
+Molte delle piastre lasciate in camera di crescita erano invece contaminate da acari (lasciano dei percorsi sulle piastre). Erano contaminate anche delle piastre chiuse.
+
+\hypertarget{D20220121}{%
+\section{20220121}\label{D20220121}}
+
+Pulizia laboratorio.
+
+Contattare Chiara per la prossima settimana.
+
+\hypertarget{D20220124}{%
+\section{20220124}\label{D20220124}}
+
+\hypertarget{preparazione-dei-materiali-e-organizzazione-per-domani}{%
+\subsection{Preparazione dei materiali e organizzazione per domani}\label{preparazione-dei-materiali-e-organizzazione-per-domani}}
+
+Domani (\ref{D20220125}) Chiara e Miriana verranno per iniziare a preparare i materiali per filtrare le beute di \emph{O. maius} A e Zn cresciute su Cd nell'ultimo mese e preparare le piastre di Czapek-dox
+
+\hypertarget{D20220125}{%
+\section{20220125}\label{D20220125}}
+
+\hypertarget{sterilizzare-tutti-i-materiali-necessari-per-filtrare-le-beute}{%
+\subsection{Sterilizzare tutti i materiali necessari per filtrare le beute}\label{sterilizzare-tutti-i-materiali-necessari-per-filtrare-le-beute}}
+
+\begin{itemize}
+\tightlist
+\item
+  buckner\\
+\item
+  filtri di carta\\
+\item
+  pinzette\\
+\item
+  provette da 1,5 o 2 ml\\
+\item
+  1L di H\textsubscript{2}O
+\end{itemize}
+
+\hypertarget{preparare-delle-nuove-piastre-utilizzando-il-czapeck-dox}{%
+\subsection{Preparare delle nuove piastre utilizzando il Czapeck-dox}\label{preparare-delle-nuove-piastre-utilizzando-il-czapeck-dox}}
+
+Prepatato 1.5L di terreno. Dopo averlo sterilizzato siamo riusciti a colare 65 piastre.
+
+\hypertarget{verificare-che-il-sistema-a-muro-per-fare-il-vuoto-per-filtrare-funzioni-senza-problemi}{%
+\subsection{Verificare che il sistema a muro per fare il vuoto per filtrare funzioni senza problemi}\label{verificare-che-il-sistema-a-muro-per-fare-il-vuoto-per-filtrare-funzioni-senza-problemi}}
+
+Ok! Non molto potente ma funziona.
+
+\hypertarget{D20220126}{%
+\section{20220126}\label{D20220126}}
+
+\hypertarget{filtrare-le-colture}{%
+\subsection{Filtrare le colture}\label{filtrare-le-colture}}
+
+\begin{itemize}
+\tightlist
+\item
+  Fare foto delle beute
+\end{itemize}
+
+\hypertarget{peso-dei-miceli-filtrati}{%
+\subsubsection{Peso dei miceli filtrati}\label{peso-dei-miceli-filtrati}}
+
+\begin{table}
+
+\caption{\label{tab:tabella-pesi-20220126}Weight in gram of _O. maius_ Zn and A grown on different concentrations of Cd}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\hline
+Sample & Replicate & Cd & Weight\_g & note\\
+\hline
+O. maius A & 1 & 0.000 & 0.776 & \\
+\hline
+O. maius A & 2 & 0.000 & 0.989 & \\
+\hline
+O. maius A & 3 & 0.000 & 1.464 & \\
+\hline
+O. maius A & 4 & 0.000 & 1.047 & \\
+\hline
+O. maius A & 5 & 0.000 & 1.436 & \\
+\hline
+O. maius A & 1 & 0.025 & NA & No growth\\
+\hline
+O. maius A & 2 & 0.025 & NA & No growth\\
+\hline
+O. maius A & 3 & 0.025 & NA & No growth\\
+\hline
+O. maius A & 4 & 0.025 & NA & No growth\\
+\hline
+O. maius A & 5 & 0.025 & NA & No growth\\
+\hline
+O. maius A & 1 & 0.050 & NA & No growth\\
+\hline
+O. maius A & 2 & 0.050 & NA & No growth\\
+\hline
+O. maius A & 3 & 0.050 & NA & No growth\\
+\hline
+O. maius A & 4 & 0.050 & NA & No growth\\
+\hline
+O. maius A & 5 & 0.050 & NA & No growth\\
+\hline
+O. maius Zn & 1 & 0.000 & 0.707 & \\
+\hline
+O. maius Zn & 2 & 0.000 & 0.618 & \\
+\hline
+O. maius Zn & 3 & 0.000 & 0.563 & \\
+\hline
+O. maius Zn & 4 & 0.000 & 0.597 & \\
+\hline
+O. maius Zn & 5 & 0.000 & 0.623 & \\
+\hline
+O. maius Zn & 1 & 0.025 & 0.464 & \\
+\hline
+O. maius Zn & 2 & 0.025 & 0.219 & \\
+\hline
+O. maius Zn & 3 & 0.025 & 0.232 & \\
+\hline
+O. maius Zn & 4 & 0.025 & 0.294 & \\
+\hline
+O. maius Zn & 5 & 0.025 & 0.302 & \\
+\hline
+O. maius Zn & 1 & 0.050 & 0.538 & Combined two flasks\\
+\hline
+O. maius Zn & 2 & 0.050 & 0.561 & Combined two flasks\\
+\hline
+O. maius Zn & 3 & 0.050 & 0.481 & \\
+\hline
+\end{tabu}
+\end{table}
+
+\hypertarget{lavare-le-beute}{%
+\subsection{Lavare le beute}\label{lavare-le-beute}}
+
+\hypertarget{D20220127}{%
+\section{20220127}\label{D20220127}}
+
+\hypertarget{preparazione-terreno-czapek-glucosio}{%
+\subsection{Preparazione terreno (Czapek-glucosio)}\label{preparazione-terreno-czapek-glucosio}}
+
+Deciso con Elena di portare il pH a 5 anzichè a 6. Questo perchè nel precedente esperimento, in cui il pH era 6 i funghi (\emph{O. maius} Zn e \emph{O. maius} A) non sono cresciuti bene in presenza di Cd. Da precedenti articoli che usavano Czapek-glucosio il pH era più basso, addirittura 4 nel caso di \citep{KHOUJA20141}.
+
+Il pH è rimasto 5 anche dopo aver autoclavato.
+
+\hypertarget{D20220128}{%
+\section{20220128}\label{D20220128}}
+
+\hypertarget{preparazaione-degli-inoculi}{%
+\subsection{Preparazaione degli inoculi}\label{preparazaione-degli-inoculi}}
+
+Deciso di usare 3 concentrazioni di Cd:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  20uM\\
+\item
+  10uM\\
+\item
+  5uM
+\end{enumerate}
+
+Quindi in 100ml di terreno messi rispettivamente: 200ul, 100ul, 50ul
+
+5 repliche per concentrazione per entrambi i funghi:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \emph{O. maius} Zn (tollerante)
+\item
+  \emph{O. maius} A (suscettibile)
+\end{enumerate}
+
+\hypertarget{pulizia-della-cella-funghi}{%
+\subsection{Pulizia della cella funghi}\label{pulizia-della-cella-funghi}}
+
+\hypertarget{D20220131}{%
+\section{20220131}\label{D20220131}}
+
+\hypertarget{preparazione-piastre-czapek-dox}{%
+\subsection{Preparazione piastre Czapek-dox}\label{preparazione-piastre-czapek-dox}}
+
+Preparare le piastre con il Czapek-dox che ha portato Elena da Nancy.
+
+Preparare 1.5L dividendolo in 2 beute da 1L (750mL per beuta) + 47.5g per L.
+
+Il terreno contiene già 2\% di agar.
+
+\hypertarget{propagazione-funghi-elena}{%
+\subsection{Propagazione funghi Elena}\label{propagazione-funghi-elena}}
+
+Fare 3 piastre per fungo.
+
+Fare con Chiara. Io faccio prima piastra e lei le altre 2.
+
+\begin{table}
+
+\caption{\label{tab:trapianti-20220131}Tabella trapianti}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedleft}X>{\raggedright}X}
+\hline
+Madre & Figlia & terreno & mut & note\\
+\hline
+OmZn & 20220131-OmZn-1 & Czapek-dox & NA & NA\\
+\hline
+OmZn & 20220131-OmZn-2 & Czapek-dox & NA & NA\\
+\hline
+OmZn & 20220131-OmZn-3 & Czapek-dox & NA & NA\\
+\hline
+OmA & 20220131-OmA-1 & Czapek-dox & NA & NA\\
+\hline
+OmA & 20220131-OmA-2 & Czapek-dox & NA & NA\\
+\hline
+OmA & 20220131-OmA-3 & Czapek-dox & NA & NA\\
+\hline
+Om90 & 20220131-Om90-1 & Czapek-dox & 1348 & NA\\
+\hline
+Om90 & 20220131-Om90-2 & Czapek-dox & 1348 & NA\\
+\hline
+Om90 & 20220131-Om90-3 & Czapek-dox & 1348 & NA\\
+\hline
+Om gr. B & 20220131-Om gr. B-1 & Czapek-dox & 2996 & NA\\
+\hline
+Om gr. B & 20220131-Om gr. B-2 & Czapek-dox & 2996 & NA\\
+\hline
+Om gr. B & 20220131-Om gr. B-3 & Czapek-dox & 2996 & NA\\
+\hline
+PSIV & 20220131-PSIV-1 & Czapek-dox & 1371 & NA\\
+\hline
+PSIV & 20220131-PSIV-2 & Czapek-dox & 1371 & NA\\
+\hline
+PSIV & 20220131-PSIV-3 & Czapek-dox & 1371 & NA\\
+\hline
+MICELIO G1 & 20220131-MICELIO G1-1 & Czapek-dox & 2999 & NA\\
+\hline
+MICELIO G1 & 20220131-MICELIO G1-2 & Czapek-dox & 2999 & NA\\
+\hline
+MICELIO G1 & 20220131-MICELIO G1-3 & Czapek-dox & 2999 & NA\\
+\hline
+MICELIO H & 20220131-MICELIO H-1 & Czapek-dox & 3000 & NA\\
+\hline
+MICELIO H & 20220131-MICELIO H-2 & Czapek-dox & 3000 & NA\\
+\hline
+MICELIO H & 20220131-MICELIO H-3 & Czapek-dox & 3000 & NA\\
+\hline
+Micelio sterile moniliaceo & 20220131-Micelio sterile moniliaceo-1 & Czapek-dox & 1375 & NA\\
+\hline
+Micelio sterile moniliaceo & 20220131-Micelio sterile moniliaceo-2 & Czapek-dox & 1375 & NA\\
+\hline
+Micelio sterile moniliaceo & 20220131-Micelio sterile moniliaceo-3 & Czapek-dox & 1375 & NA\\
+\hline
+Kuehneromyces mutabilis & 20220131-Kuehneromyces mutabilis-1 & Czapek-dox & NA & NA\\
+\hline
+Kuehneromyces mutabilis & 20220131-Kuehneromyces mutabilis-2 & Czapek-dox & NA & NA\\
+\hline
+Kuehneromyces mutabilis & 20220131-Kuehneromyces mutabilis-3 & Czapek-dox & NA & NA\\
+\hline
+M2-5 & 20220131-M2-5-1 & Czapek-dox & 6402 & NA\\
+\hline
+M2-5 & 20220131-M2-5-2 & Czapek-dox & 6402 & NA\\
+\hline
+M2-5 & 20220131-M2-5-3 & Czapek-dox & 6402 & NA\\
+\hline
+M17 & 20220131-M17-1 & Czapek-dox & 6464 & NA\\
+\hline
+M17 & 20220131-M17-2 & Czapek-dox & 6464 & NA\\
+\hline
+M17 & 20220131-M17-3 & Czapek-dox & 6464 & NA\\
+\hline
+M42 & 20220131-M42-1 & Czapek-dox & 6465 & NA\\
+\hline
+M42 & 20220131-M42-2 & Czapek-dox & 6465 & NA\\
+\hline
+M42 & 20220131-M42-3 & Czapek-dox & 6465 & NA\\
+\hline
+M48 & 20220131-M48-1 & Czapek-dox & 6466 & NA\\
+\hline
+M48 & 20220131-M48-2 & Czapek-dox & 6466 & NA\\
+\hline
+M48 & 20220131-M48-3 & Czapek-dox & 6466 & NA\\
+\hline
+M49 & 20220131-M49-1 & Czapek-dox & 6467 & NA\\
+\hline
+M49 & 20220131-M49-2 & Czapek-dox & 6467 & NA\\
+\hline
+M49 & 20220131-M49-3 & Czapek-dox & 6467 & NA\\
+\hline
+Heterobasidion annosum & 20220131-Heterobasidion annosum-1 & Czapek-dox & NA & NA\\
+\hline
+Heterobasidion annosum & 20220131-Heterobasidion annosum-2 & Czapek-dox & NA & NA\\
+\hline
+Heterobasidion annosum & 20220131-Heterobasidion annosum-3 & Czapek-dox & NA & NA\\
+\hline
+Hypholoma fasciculare & 20220131-Hypholoma fasciculare-1 & Czapek-dox & NA & NA\\
+\hline
+Hypholoma fasciculare & 20220131-Hypholoma fasciculare-2 & Czapek-dox & NA & NA\\
+\hline
+Hypholoma fasciculare & 20220131-Hypholoma fasciculare-3 & Czapek-dox & NA & NA\\
+\hline
+Stereum hirsutum & 20220131-Stereum hirsutum-1 & Czapek-dox & NA & NA\\
+\hline
+Stereum hirsutum & 20220131-Stereum hirsutum-2 & Czapek-dox & NA & NA\\
+\hline
+Stereum hirsutum & 20220131-Stereum hirsutum-3 & Czapek-dox & NA & NA\\
+\hline
+5*L3 & NA & NA & NA & da riportare\\
+\hline
+5*L3 & NA & NA & NA & da riportare\\
+\hline
+5*L3 & NA & NA & NA & da riportare\\
+\hline
+H. ericae & NA & NA & NA & da riportare\\
+\hline
+H. ericae & NA & NA & NA & da riportare\\
+\hline
+H. ericae & NA & NA & NA & da riportare\\
+\hline
+R. ericae (Nancy) & NA & NA & NA & da riportare\\
+\hline
+R. ericae (Nancy) & NA & NA & NA & da riportare\\
+\hline
+R. ericae (Nancy) & NA & NA & NA & da riportare\\
+\hline
+Pythium & NA & NA & NA & da riportare\\
+\hline
+Pythium & NA & NA & NA & da riportare\\
+\hline
+Pythium & NA & NA & NA & da riportare\\
+\hline
+\end{tabu}
+\end{table}
+
+\hypertarget{D20220201}{%
+\section{20220201}\label{D20220201}}
+
+\hypertarget{preparato-piastre-antagonismo}{%
+\subsection{Preparato piastre antagonismo}\label{preparato-piastre-antagonismo}}
+
+\hypertarget{organismi-usati}{%
+\subsubsection{Organismi usati}\label{organismi-usati}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \emph{Heterobasidion annosum}\\
+\item
+  \emph{Hypholoma fasciculare}\\
+\item
+  \emph{Stereum hirsutum}\\
+\item
+  \emph{Kuehneromyces mutabilis}
+\end{enumerate}
+
+\hypertarget{controlli}{%
+\subsubsection{Controlli}\label{controlli}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  6 piastre per \emph{O. maius} Zn
+\item
+  3 Piastre per ogni fungo usato per l'interazione
+\end{enumerate}
+
+\hypertarget{piastre-antagonismo}{%
+\subsubsection{Piastre antagonismo}\label{piastre-antagonismo}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  6 piastre per interazione (24 piastre)
+\end{enumerate}
+
+\hypertarget{D20220203}{%
+\section{20220203}\label{D20220203}}
+
+Worked on PKS paper
+
+\hypertarget{D20220204}{%
+\section{20220204}\label{D20220204}}
+
+Worked on PKS paper
+
+Visita la server del politecnico
+
+\hypertarget{progetto-pks}{%
+\chapter{Progetto PKS}\label{progetto-pks}}
+
+\hypertarget{section}{%
+\section{20220119}\label{section}}
+
+Lettura relazione finale di Simone Belmondo \href{Documents/Relazione_finale_Simone_Belmondo.pdf}{download}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

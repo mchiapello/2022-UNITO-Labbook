@@ -183,4 +183,27 @@ rd %>%
 1. 6 piastre per interazione (24 piastre)
 
 
+## 20220203 {#D20220203}
 
+Worked on PKS paper
+
+## 20220204 {#D20220204}
+
+Worked on PKS paper
+
+Visita la server del politecnico
+
+## 20220207 {#D20220207}
+
+### Test estrazione RNA (Chiara De Filippis e Miriana Bortolot)
+
+Testare 2 protocolli di estrazione di RNA da funghi
+
+1. [NucleoSpin RNA Plant and Fungi](https://www.mn-net.com/media/pdf/a4/03/d2/Instruction-NucleoSpin-RNA-Plant-and-Fungi.pdf#page=15&zoom=auto,-218,581)
+
+1. [RNeasy Plant Mini Kit]("https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/rna-purification/total-rna/rneasy-plant-mini-kit/")
+
+#### [NucleoSpin RNA Plant and Fungi](protocols/Instruction-NucleoSpin-RNA-Plant-and-Fungi.pdf)
+
+
+#### [RNeasy Plant Mini Kit](protocols/HB-0572-002 1101268_PCard_RNY_Plant_Mini_0316_WW_WEB.pdf)
