@@ -197,13 +197,30 @@ Visita la server del politecnico
 
 ### Test estrazione RNA (Chiara De Filippis e Miriana Bortolot)
 
-Testare 2 protocolli di estrazione di RNA da funghi
+Preparare 12 campioni per riempire un chip del bioanalyzer
+
+Testare su 4 condizioni:
+
+1. _O. maius_ Zn (Controllo)    
+1. _O. maius_ A (Controllo)    
+1. _O. maius_ Zn 25uM    
+1. _O. maius_ Zn 50uM    
+
+Testare 2 protocolli di estrazione di RNA da funghi e 1 protocollo di estrazione da piante
 
 1. [NucleoSpin RNA Plant and Fungi](https://www.mn-net.com/media/pdf/a4/03/d2/Instruction-NucleoSpin-RNA-Plant-and-Fungi.pdf#page=15&zoom=auto,-218,581)
 
+Per i funghi e piante 
+
 1. [RNeasy Plant Mini Kit]("https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/rna-purification/total-rna/rneasy-plant-mini-kit/")
+
+Solo per funghi
+
 
 #### [NucleoSpin RNA Plant and Fungi](protocols/Instruction-NucleoSpin-RNA-Plant-and-Fungi.pdf)
 
+Usato protocollo con beads.
 
-#### [RNeasy Plant Mini Kit](protocols/HB-0572-002 1101268_PCard_RNY_Plant_Mini_0316_WW_WEB.pdf)
+#### [RNeasy Plant Mini Kit](protocols/HB-0435-006-HB_RNYMini_1019_WW.pdf)
+
+Usato protocollo con azoto liquido
