@@ -219,8 +219,40 @@ Solo per funghi
 
 #### [NucleoSpin RNA Plant and Fungi](protocols/Instruction-NucleoSpin-RNA-Plant-and-Fungi.pdf)
 
-Usato protocollo con beads.
+Usato protocollo con beads e con azoto liquido.
 
-#### [RNeasy Plant Mini Kit](protocols/HB-0435-006-HB_RNYMini_1019_WW.pdf)
+Nel protocollo con beads non abbiamo usato il PFN buffer, mentre l'abbiamo usato con il mortaio e pesterllo. 
 
-Usato protocollo con azoto liquido
+## 20220208 {#D20220208}
+
+### Meeting con Olivier Friard per parlare del C3S OCCAM
+
+### Esami Biologia delle interazioni
+
+## 20220209 {#D20220209}
+
+### Esami Biologia delle interazioni
+
+### Meeting con Olivier Friard per capire come usare OCCAM
+
+
+
+## 20220218 {#D20220218}
+
+### Riunione con Simone
+
+Realizzato poco, aspettare che Simone carichi i dati e contatti Ekaterina. 
+
+Capire poi con lei se rifare la figura con una lista di PKS più aggiornata.
+
+## 20220222 {#D20220222}
+
+### Riunione con Miriana
+
+Riunione con Miriana per decidere cosa fare in settimana
+
+## 20220223 {#D20220223}
+
+### Piastre interazione con Chiara
+
+L'altra volta abbiamo sbagliato! Prima si mette _O. maius_ e dopo due settimana si aggiunge il fungo antagonismo (Tutte le piastre di controllo con solo _O. maius_ possono essere data a Miriana Bortolot).
